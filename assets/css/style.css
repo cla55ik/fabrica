@@ -90,6 +90,12 @@ header {
     align-items: center;
 }
 
+.header__logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .header__logo .title {
     font-weight: normal;
     font-size: 18px;
