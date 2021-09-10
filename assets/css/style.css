@@ -31,9 +31,17 @@ button {
     margin: 0 auto;
 }
 
+.btn {
+    padding: 17px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .btn-blue {
     transition: all ease 0.5s;
     background: var(--bg-btn);
+    color: #fff;
 }
 
 .btn-arrow {
@@ -186,6 +194,7 @@ header {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 20px;
+    max-width: 65%;
 }
 
 .header__menu-container a {
@@ -383,4 +392,123 @@ header {
 
 .signup__section-wrapper form {
     margin-top: 60px;
+}
+
+
+/* PRICE */
+
+.price {
+    background-image: url(../img/bg-price.jpg);
+}
+
+.price__container {
+    text-align: center;
+    padding: 65px 0;
+}
+
+.price__container h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+    /* identical to box height, or 167% */
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.price__card {
+    min-height: 365px;
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 62px rgba(0, 0, 0, 0.25);
+    padding: 45px 55px 55px 55px;
+}
+
+.price__card .title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    /* or 108% */
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--bg-btn)
+}
+
+.price__card .title .think {
+    width: 100%;
+    color: var(--dark-gray);
+    font-weight: normal;
+}
+
+.price__card .title .bold {
+    width: 100%;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.price__card .description {
+    width: 100%;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--dark-gray);
+}
+
+.price__card .last-price {
+    width: 100%;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--light-gray);
+}
+
+.price__card .curr-price {
+    width: 100%;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--bg-btn);
+}
+
+.price__card .cta-signin,
+.price__card .cta_signup {
+    width: 100%;
+}
+
+
+/* Реклама */
+
+.advertising {
+    color: var(--gray-btn);
+    background: #F4F4F4;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    padding-top: 95px;
+    padding-bottom: 115px;
 }
