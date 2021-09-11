@@ -30,6 +30,7 @@ a {
 
 body {
     font-family: 'MontserratR';
+    color: #000;
 }
 
 button {
@@ -472,21 +473,6 @@ header {
     width: 100%;
 }
 
-
-/* Реклама */
-
-.advertising {
-    color: var(--gray-btn);
-    background: #F4F4F4;
-    text-align: center;
-    font-size: 30px;
-    line-height: 37px;
-    /* identical to box height */
-    letter-spacing: 0.08em;
-    padding-top: 70px;
-    padding-bottom: 85px;
-}
-
 .price__description p {
     font-size: 16px;
     line-height: 20px;
@@ -529,4 +515,257 @@ header {
     line-height: 20px;
     /* identical to box height */
     letter-spacing: 0.04em;
+}
+
+
+/* Реклама */
+
+.advertising {
+    color: var(--gray-btn);
+    background: #F4F4F4;
+    text-align: center;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    padding-top: 70px;
+    padding-bottom: 85px;
+}
+
+
+/*Пратнер*/
+
+.partner {
+    padding-bottom: 60px;
+    background: rgb(244, 244, 244);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, rgba(244, 244, 244, 1) 60%);
+}
+
+.partner__container {
+    background-color: #fff;
+    margin-top: 40px;
+    border: 1px solid #BFBFBF;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.partner__container h2 {
+    background: rgba(101, 137, 241, 0.5);
+    color: #fff;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 14px 0;
+}
+
+.partner__container .description {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-top: 28px;
+    margin-bottom: 46px;
+}
+
+.partner__profit-item {
+    font-size: 16px;
+    line-height: 30px;
+    /* or 162% */
+    letter-spacing: 0.04em;
+    color: var(--dark-gray);
+    margin-bottom: 25px;
+}
+
+.partner__profit-item .profit__icon {
+    width: 10%;
+}
+
+.partner__profit-item .profit__text {
+    width: 90%;
+}
+
+
+/* Отзывы */
+
+.feedback {
+    background: rgb(244, 244, 244);
+    background: linear-gradient(180deg, rgba(244, 244, 244, 1) 65%, rgba(255, 255, 255, 1) 65%);
+}
+
+.feedback__container h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+}
+
+.feedback__container .description {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.feedback__container .carousel-control {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.feedback__card {
+    width: 30%;
+    background-color: var(--light-gray);
+    padding: 30px 30px 30px 40px;
+}
+
+.feedback__card-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.feedback__card .name {
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.08em;
+    margin-top: 11px;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+.feedback__card .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: -15px;
+    color: #000;
+}
+
+.feedback__card .review .text {
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #575757;
+}
+
+
+/* Форма задать вопрос */
+
+.callback {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.callback h2 {
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.04em;
+    color: var(--dark-gray);
+    margin-bottom: 38px;
+}
+
+form#callback input {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+form#callback textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+    border-radius: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    color: var(--gray-btn);
+    padding: 18px 25px;
+}
+
+form#callback p {
+    margin-top: 12px;
+    margin-bottom: 26px;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    letter-spacing: 0.08em;
+}
+
+form#callback a {
+    text-decoration: none;
+    color: var(--bg-btn);
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--dark-gray);
+    padding: 15px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer__text {
+    margin-left: 10px;
+}
+
+.footer__text .title {
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.footer__text .subtitle {
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    letter-spacing: 0.17em;
+    color: #FFFFFF;
+}
+
+.footer__contacts .policy {
+    margin-top: 27px;
+}
+
+.footer__contacts .title {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #979797;
+}
+
+.footer__contacts .contact a {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+.footer__policy .title {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #979797;
 }
