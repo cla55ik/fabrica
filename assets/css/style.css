@@ -3,6 +3,49 @@
     padding: 0;
 }
 
+svg {
+    fill: #fff;
+    height: 15px;
+    width: 55px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background: rgba(101, 137, 241, 0.5);
+}
+
+.carousel__prev-wrapper svg,
+.carousel__next-wrapper svg {
+    fill: var(--light-gray);
+}
+
+.feedback__container .carousel-control .carousel__next-wrapper svg,
+.feedback__container .carousel-control .carousel__prev-wrapper svg {
+    fill: var(--gray-btn);
+}
+
+.carousel__next-wrapper svg:hover {
+    fill: var(--bg-btn);
+}
+
+.carousel__prev-wrapper svg:hover {
+    fill: var(--bg-btn);
+}
+
+.login-btn svg:hover {
+    fill: var(--bg-btn);
+}
+
+.modal__btn-submit:hover {
+    background: rgba(98, 98, 98, 0.7);
+    box-shadow: 0px 4px 4px rgba(98, 98, 98, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(98, 98, 98, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(98, 98, 98, 0.25);
+}
+
 h1,
 h2,
 h3,
@@ -12,6 +55,11 @@ div,
 span,
 a {
     margin: 0;
+    padding: 0;
+}
+
+.container,
+.div {
     padding: 0;
 }
 
@@ -63,6 +111,7 @@ button {
 }
 
 input {
+    transition: all ease 0.5s;
     background: #FFFFFF;
     border: 1px solid var(--light-gray);
     box-sizing: border-box;
@@ -79,9 +128,78 @@ input {
 
 /* hovers */
 
+input:hover {
+    transition: all ease 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input:focus {
+    outline: none;
+    transition: all ease 0.5s;
+    border: 1px solid var(--bg-btn);
+}
+
+input:active {
+    outline: none;
+    transition: all ease 0.5s;
+    border: 1px solid var(--bg-btn);
+}
+
+input:invalid {
+    border: 1px solid #FF0000;
+}
+
+input:-moz-submit-invalid {
+    border: 1px solid #FF0000;
+}
+
+input:-moz-ui-invalid {
+    border: 1px solid #FF0000;
+}
+
+textarea:hover {
+    transition: all ease 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+textarea:focus {
+    outline: none;
+    transition: all ease 0.5s;
+    border: 1px solid var(--bg-btn);
+}
+
+textarea:active {
+    outline: none;
+    transition: all ease 0.5s;
+    border: 1px solid var(--bg-btn);
+}
+
+textarea:invalid {
+    border: 1px solid #FF0000;
+}
+
+textarea:-moz-submit-invalid {
+    border: 1px solid #FF0000;
+}
+
+textarea:-moz-ui-invalid {
+    border: 1px solid #FF0000;
+}
+
 .btn-blue:hover {
     transition: all ease 0.5s;
-    background: var(--gray-btn);
+    box-shadow: 4px 4px 4px #626262;
+    -webkit-box-shadow: 4px 4px 4px #626262;
+    -moz-box-shadow: 4px 4px 4px #626262;
+}
+
+.price__card:hover {
+    /* transition: all ease 0.5s; */
+    border: 2px solid var(--bg-btn);
 }
 
 
@@ -411,10 +529,12 @@ header {
 }
 
 .price__card {
+    /* transition: all ease 0.5s; */
     min-height: 365px;
     width: 23%;
     background: #FFFFFF;
     box-shadow: 0px 0px 62px rgba(0, 0, 0, 0.25);
+    border: 2px solid #626262;
     padding: 45px 55px 55px 55px;
 }
 
@@ -768,4 +888,94 @@ footer a {
     text-align: right;
     letter-spacing: 0.08em;
     color: #979797;
+}
+
+
+/* MODAL */
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-content .modal-header,
+.modal-content .modal-body,
+.modal-content .modal-footer {
+    padding: 0px;
+    border: none;
+}
+
+.modal-content .modal-body {
+    padding: 25px 35px 40px 35px;
+    border: none;
+}
+
+.modal__signin .modal-content {
+    padding: 35px;
+}
+
+form#form_model_signin input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.modal__tab {
+    padding: 30px 20px;
+    border: 1px solid #DFDFDF;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.forgot-pass {
+    margin: 15px 0px 60px 0px;
+}
+
+.forgot-pass a {
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    text-decoration-line: underline;
+    color: var(--gray-btn);
+}
+
+.modal__btn-submit {
+    background: #626262;
+    color: #fff;
+    padding: 18px 30px;
+    width: 70%;
+}
+
+.text-or {
+    margin: 24px 0;
+}
+
+.social__auth {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tab__button {
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    border: 1px solid #DDDDDD;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+form#form_model_signup input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.modal__title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
 }

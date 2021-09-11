@@ -8,7 +8,11 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <title>Fabrica design service</title>
 
@@ -56,8 +60,11 @@
                     </div>
                 </div>
                 <div class="login-btn">
-                    <button>
-                        <img src="assets/img/arrow-right.svg" alt="">
+                    <button type="button" data-toggle="modal" data-target="#signUpModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                 />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -77,11 +84,14 @@
             <div class="container cta__content col-8 ">
                 <h1>Создание<br>интерьерных<br>коллажей</h1>
                 <p>Используя FABRICA design servicе, даже начинающий дизайнер сможет создать интерьер всего за 15 минут</p>
-                <button class="btn-blue btn-arrow ">
+                <button class="btn-blue btn-arrow" data-toggle="modal" data-target="#signUpModal">
                     <span>
                         Попробовать бесплатно
                     </span>
-                    <img src="assets/img/arrow-right.svg " alt=" ">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                             />
+                    </svg>
                 </button>
             </div>
         </div>
@@ -125,11 +135,14 @@
                         <div class="services__item d-flex align-items-center">
                             <span class="number"></span>
                             <div class="service__btn">
-                                <button class="btn-blue btn-arrow">
+                                <button class="btn-blue btn-arrow" data-toggle="modal" data-target="#signUpModal">
                                     <span>
                                         Попробовать бесплатно
                                     </span>
-                                    <img src="assets/img/arrow-right.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                        <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                             />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -158,13 +171,19 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-5 carousel__prev-wrapper text-end">
                             <button>
-                                <img src="assets/img/arrow-left-gray.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
+                                         />
+                                </svg>
                             </button>
                         </div>
                         <div class="col-2"></div>
                         <div class="col-5 carousel__next-wrapper text-start">
                             <button>
-                                <img src="assets/img/arrow-right-gray.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                         />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -184,7 +203,10 @@
                         <span>
                             Зарегистрироваться
                         </span>
-                        <img src="assets/img/arrow-right.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                 />
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -202,7 +224,7 @@
                             3 дня
                         </div>
                         <div class="cta">
-                            <button class="btn-sq btn-blue">Начать бесплатно</button>
+                            <button class="btn-sq btn-blue" data-toggle="modal" data-target="#signUpModal">Начать бесплатно</button>
                         </div>
                     </div>
                     <div class="price__card d-flex flex-wrap justify-content-center align-content-between">
@@ -225,7 +247,12 @@
                         <div class="cta-signin">
                             <button class="btn-transparent">
                                 <span>Вход</span>
-                                <span><img src="assets/img/arrow-right-dark.svg" alt=""></span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                         />
+                                </svg>
+                            </span>
                             </button>
                         </div>
                     </div>
@@ -252,7 +279,12 @@
                         <div class="cta-signin">
                             <button class="btn-transparent">
                                 <span>Вход</span>
-                                <span><img src="assets/img/arrow-right-dark.svg" alt=""></span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                         />
+                                </svg>
+                            </span>
                             </button>
                         </div>
                     </div>
@@ -279,7 +311,10 @@
                         <div class="cta-signin">
                             <button class="btn-transparent">
                                 <span>Вход</span>
-                                <span><img src="assets/img/arrow-right-dark.svg" alt=""></span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                         />
+                                </svg></span>
                             </button>
                         </div>
                     </div>
@@ -385,11 +420,14 @@
 
                         </span>
                             <span class="profit__text">
-                            <button class="btn-blue btn-arrow">
+                            <button class="btn-blue btn-arrow" data-toggle="modal" data-target="#callbackModal">
                                 <span>
-                                    Попробовать бесплатно
+                                    Узнать условия
                                 </span>
-                            <img src="assets/img/arrow-right.svg" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                         />
+                                </svg>
                             </button>
                             </span>
 
@@ -412,13 +450,19 @@
                 <div class="row d-flex justify-content-center carousel-control">
                     <div class="col-5 carousel__prev-wrapper text-end">
                         <button>
-                            <img src="assets/img/arrow-left-gray.svg" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
+                                     />
+                            </svg>
                         </button>
                     </div>
                     <div class="col-2"></div>
                     <div class="col-5 carousel__next-wrapper text-start">
                         <button>
-                            <img src="assets/img/arrow-right-gray.svg" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                     />
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -495,7 +539,10 @@
                         <span>
                             Зарегистрироваться
                         </span>
-                        <img src="assets/img/arrow-right.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                 />
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -538,10 +585,19 @@
 
             </div>
             <div class="footer__social d-flex justify-content-between align-items-center col-1">
-                <img src="assets/img/instagram.svg" alt="">
-                <img src="assets/img/yaoutube.svg" alt="">
-                <img src="assets/img/facebook.svg" alt="">
-                <img src="assets/img/vimeo.svg" alt="">
+                <a href="#">
+                    <img src="assets/img/instagram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/img/yaoutube.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/img/facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/img/vimeo.svg" alt="">
+                </a>
+
             </div>
         </div>
         <div class="footer-container container d-flex justify-content-between">
@@ -567,6 +623,131 @@
         </div>
 
     </footer>
+
+    <!-- Modal SignUp-->
+    <div class="modal fade modal__signin" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__tabs">
+                        <div class="d-flex modal__tabs-control">
+                            <div id="tab_btn_signin" class="col-6 tab__button active">Вход</div>
+                            <div id="tab_btn_signup" class="col-6 tab__button">Регистрация</div>
+                        </div>
+                        <div class="modal__tab" id="tab_signin">
+                            <form action=" " id="form_model_signin">
+                                <div>
+                                    <input type="email" name="email" id=" " placeholder="Электронная почта">
+                                </div>
+                                <div>
+                                    <input type="password" name="pass" id=" " placeholder="Пароль">
+                                </div>
+                                <div class="forgot-pass">
+                                    <a href="# ">Забыли  пароль ?</a>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="modal__btn-submit">Войти</button>
+                                </div>
+                                <div class="text-center text-or ">
+                                    или
+                                </div>
+                                <div class="social__auth d-flex justify-content-between ">
+                                    <a href=" ">
+                                        <img src="assets/img/auth-facebook.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-google.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-vk.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-instagram.svg " alt=" ">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal__tab hidden" id="tab_signup">
+                            <form action=" " id="form_model_signup">
+                                <div>
+                                    <input type="email " name="email " id=" " placeholder="Электронная почта ">
+                                </div>
+                                <div>
+                                    <input type="password " name="pass " id=" " placeholder="Пароль ">
+                                </div>
+                                <div>
+                                    <input type="password " name="pass " id=" " placeholder="Повторите пароль ">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="modal__btn-submit">Зарегистрироваться</button>
+                                </div>
+                                <div class="text-center text-or ">
+                                    или
+                                </div>
+                                <div class="social__auth d-flex justify-content-between ">
+                                    <a href=" ">
+                                        <img src="assets/img/auth-facebook.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-google.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-vk.svg " alt=" ">
+                                    </a>
+                                    <a href=" ">
+                                        <img src="assets/img/auth-instagram.svg " alt=" ">
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal CallBack-->
+    <div class="modal fade modal__signin" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callbackModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form action=" " id="form_model_signin">
+                        <h5 class="modal__title text-center">Оставьте ваши контакты<br> и мы свяжемся с вами</h5>
+                        <div>
+                            <input type="text" name="name" id=" " placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <input type="text" name="name" id=" " placeholder="Ваш телефон">
+                        </div>
+                        <div>
+                            <input type="email " name="email" id=" " placeholder="Электронная почта ">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="modal__btn-submit">Отправить</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
