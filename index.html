@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <script src="assets/js/jquery.min.js"></script> -->
     <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <title>Fabrica design service</title>
 
@@ -20,7 +24,7 @@
 
 <body>
     <header>
-        <div class="header-container container d-flex justify-content-between">
+        <div class="header-container container d-xl-flex d-none justify-content-between">
             <div class="header__logo d-flex align-items-center">
                 <a href="#" d-flex align-items-center>
                     <img src="assets/img/logo.png" alt="FABRICА DESIGN SERVICE">
@@ -69,10 +73,53 @@
                 </div>
             </div>
         </div>
+
+        <!-- header mobile -->
+        <div class="header-container container d-flex d-md-none justify-content-between">
+            <div class="header__logo d-flex align-items-center col-2">
+                <a href="#" d-flex align-items-center>
+                    <img src="assets/img/logo.png" alt="FABRICА DESIGN SERVICE">
+
+                </a>
+
+            </div>
+            <div class="col-9 text-center">
+                <div class="header__text">
+                    <div class="title">
+                        FABRICА
+                    </div>
+                    <div class="subtitle">
+                        DESIGN SERVICE
+                    </div>
+                </div>
+                <div class="header__contacts">
+                    <div>
+                        <span class="title">Для поставщиков</span>
+                        <span class="contact">
+                            <a href="tel:+79781234567">+7(978)123 45 67</a>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="title">Для пользователей </span>
+                        <span class="contact">
+                            <a href="tel:+79781234567">+7(978)123 45 67</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__login col-1">
+                <div class="login-btn">
+                    <button type="button" data-toggle="modal" data-target="#signUpModal">
+                        <img src="assets/img/header_mob_signin.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="section__cta">
-            <div class="header__menu">
+            <div class="header__menu d-none d-xl-block">
                 <div class="header__menu-container container d-flex justify-content-between align-items-center">
                     <a href=" #about ">О приложении</a>
                     <a href="#price ">Стоимость</a>
@@ -81,22 +128,45 @@
                     <a href="#feedback ">Отзывы</a>
                 </div>
             </div>
-            <div class="container cta__content col-8 ">
+            <div class="container cta__content  col col-xl-8 ">
                 <h1>Создание<br>интерьерных<br>коллажей</h1>
                 <p>Используя FABRICA design servicе, даже начинающий дизайнер сможет создать интерьер всего за 15 минут</p>
                 <button class="btn-blue btn-arrow" data-toggle="modal" data-target="#signUpModal">
                     <span>
                         Попробовать бесплатно
                     </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none d-xl-inline">
                         <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                              />
                     </svg>
                 </button>
             </div>
         </div>
+        <div class="d-block d-xl-none">
+            <div class="header__menu">
+                <div class="header__menu-container container text-center">
+                    <div>
+                        <a href=" #about ">О приложении</a>
+                    </div>
+                    <div>
+                        <a href="#price ">Стоимость</a>
+                    </div>
+                    <div>
+                        <a href="#howitwork ">Как начать работу</a>
+                    </div>
+                    <div>
+                        <a href="#partner ">Партнерам</a>
+                    </div>
+                    <div>
+                        <a href="#feedback ">Отзывы</a>
+                    </div>
 
-        <div class="service">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="service" id="about">
             <div class="service__container container">
                 <h2>Что предлагает сервис FABRICA</h2>
                 <p>Для того чтобы создать дизайн-проект дизайнеру необходимо уметь работать в профессиональных программах и потратить от 10 до 20 дней своего рабочего времени. </p>
@@ -133,13 +203,13 @@
                             </span>
                         </div>
                         <div class="services__item d-flex align-items-center">
-                            <span class="number"></span>
+                            <span class="number d-none d-xl-block"></span>
                             <div class="service__btn">
                                 <button class="btn-blue btn-arrow" data-toggle="modal" data-target="#signUpModal">
                                     <span>
                                         Попробовать бесплатно
                                     </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none d-xl-inline">
                                         <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                              />
                                     </svg>
@@ -148,50 +218,82 @@
                         </div>
 
                     </div>
-                    <div class="services__img">
+                    <div class="services__img d-none d-xl-block">
                         <img src="assets/img/notebooke.jpg" alt="Что предлагает сервис FABRICA">
                     </div>
                 </div>
             </div>
         </div>
 
+
         <div class="project">
             <div class="project__container">
                 <h2 class="text-uppercase">ТАК ВЫГЛЯДЯТ ВАШИ ПРОЕКТЫ</h2>
-                <div class="project__carousel">
-                    <div class="project__carousel-wrapper d-flex justify-content-center align-items-center">
-
-                        <div class="carousel__wrapper">
+                <div class="project__carousel d-flex">
+                    <div class="project__carousel-wrapper d-flex justify-content-center align-items-center"></div>
+                    <div class="col-2 d-flex d-xl-none align-items-center">
+                        <button id="proj_prev_btn" class="proj_prev_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
+                                     />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-8 col-xl-12 owl-carousel carousel__wrapper container owl-theme" id="project_slider">
+                        <div class="item project-item">
                             <img src="assets/img/proj1.jpg" alt="">
+                        </div>
+                        <div class="item project-item">
                             <img src="assets/img/proj2.jpg" alt="">
+                        </div>
+                        <div class="item project-item">
                             <img src="assets/img/proj3.jpg" alt="">
                         </div>
-
+                        <div class="item project-item">
+                            <img src="assets/img/proj1.jpg" alt="">
+                        </div>
+                        <div class="item project-item">
+                            <img src="assets/img/proj2.jpg" alt="">
+                        </div>
+                        <div class="item project-item">
+                            <img src="assets/img/proj3.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-5 carousel__prev-wrapper text-end">
-                            <button>
+
+                    <div class="col-2 d-flex d-xl-none align-items-center">
+                        <button id="proj_next_btn" class="proj_next_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                     />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-5 carousel__prev-wrapper text-end">
+                        <button id="proj_prev_btn" class="proj_prev_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                     <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
                                          />
                                 </svg>
                             </button>
-                        </div>
-                        <div class="col-2"></div>
-                        <div class="col-5 carousel__next-wrapper text-start">
-                            <button>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5 carousel__next-wrapper text-start">
+                        <button id="proj_next_btn" class="proj_next_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                     <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                          />
                                 </svg>
                             </button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
-        <div class="signup__section">
+        <div class="signup__section" id="howitwork">
             <div class="signup__section-wrapper">
                 <h2>Начать работу с сервисом можно прямо сейчас!</h2>
                 <p> Для этого необходимо пройти краткую регистрацию, после которой вы сможете получить доступ к личному кабинету.</p>
@@ -203,7 +305,7 @@
                         <span>
                             Зарегистрироваться
                         </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none d-xl-inline">
                             <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                  />
                         </svg>
@@ -212,10 +314,10 @@
             </div>
         </div>
 
-        <div class="price">
+        <div class="price" id="price">
             <div class="price__container container">
                 <h2>Стоимость</h2>
-                <div class="price__list d-flex flex-wrap justify-content-around align-items-center">
+                <div class="price__list d-flex flex-wrap justify-content-between align-items-center">
                     <div class="price__card d-flex flex-wrap justify-content-center align-content-between">
                         <div class="title">
                             <h3>Бесплатная</br> подписка</h3>
@@ -241,11 +343,11 @@
                         <div class="description">
                             790 руб
                         </div>
-                        <div class="cta-signup">
-                            <button class="btn-sq btn-blue">РЕГИСТРАЦИЯ</button>
-                        </div>
-                        <div class="cta-signin">
-                            <button class="btn-transparent">
+                        <div class="cta">
+                            <button class="btn-sq btn-blue" data-toggle="modal" data-target="#signUpOnlyModal">
+                                РЕГИСТРАЦИЯ
+                            </button>
+                            <button class="btn-transparent" data-toggle="modal" data-target="#signInOnlyModal">
                                 <span>Вход</span>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -273,11 +375,11 @@
                         <div class="curr-price">
                             590 руб/мес
                         </div>
-                        <div class="cta-signup">
-                            <button class="btn-sq btn-blue">РЕГИСТРАЦИЯ</button>
-                        </div>
-                        <div class="cta-signin">
-                            <button class="btn-transparent">
+                        <div class="cta">
+                            <button class="btn-sq btn-blue" data-toggle="modal" data-target="#signUpOnlyModal">
+                                РЕГИСТРАЦИЯ
+                            </button>
+                            <button class="btn-transparent" data-toggle="modal" data-target="#signInOnlyModal">
                                 <span>Вход</span>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -305,16 +407,18 @@
                         <div class="curr-price">
                             490 руб/мес
                         </div>
-                        <div class="cta-signup">
-                            <button class="btn-sq btn-blue">РЕГИСТРАЦИЯ</button>
-                        </div>
-                        <div class="cta-signin">
-                            <button class="btn-transparent">
+                        <div class="cta">
+                            <button class="btn-sq btn-blue" data-toggle="modal" data-target="#signUpOnlyModal">
+                                РЕГИСТРАЦИЯ
+                            </button>
+                            <button class="btn-transparent" data-toggle="modal" data-target="#signInOnlyModal">
                                 <span>Вход</span>
-                                <span><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                     <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                          />
-                                </svg></span>
+                                </svg>
+                            </span>
                             </button>
                         </div>
                     </div>
@@ -327,7 +431,7 @@
             <div class="price__after container">
                 <h3 class="text-center">После покупки вы получите:</h3>
                 <div class="price__after-profit row justify-content-center">
-                    <div class="col-5">
+                    <div class="col col-xl-5">
                         <div class="profit-item d-flex align-items-center">
                             <img src="assets/img/Person.svg" alt="">
                             <span>Личный кабинет</span>
@@ -345,7 +449,7 @@
                             <span>Возможность наносить на эскизы выноски, пояснения</span>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col col-xl-5">
                         <div class="profit-item d-flex align-items-center">
                             <img src="assets/img/Filter.svg" alt="">
                             <span>Расширенный фильтр для быстрого поиска</span>
@@ -372,17 +476,23 @@
             </div>
         </div>
 
-        <div class="advertising">
+        <div class="advertising d-none d-xl-block">
             Здесь может быть ваша реклама
         </div>
+        <div class="advertising d-block d-xl-none">
+            Здесь может быть<br> ваша реклама
+        </div>
 
-        <div class="partner">
+        <div class="partner" id="partner">
             <div class="partner__container container">
                 <h2 class="text-center text-uppercase">как стать партнером сервиса</h2>
                 <div class=" description text-center ">Демонстрируйте свои товары дизайнерам и клиентам<br> с самого старта их дизайн-проекта</div>
-                <div class="row ">
-                    <div class="col-1"></div>
-                    <div class="col-5 partner__profit-list ">
+                <div class="row">
+                    <div class="col-1 d-none d-xl-block"></div>
+                    <div class="d-block d-xl-none parthner-img">
+                        <img src="assets/img/partner.jpg " alt=" ">
+                    </div>
+                    <div class="col-xl-5 partner__profit-list ">
                         <div class="partner__profit-item d-flex ">
                             <span class="profit__icon">
                             <img src="assets/img/check.svg " alt=" ">
@@ -424,7 +534,7 @@
                                 <span>
                                     Узнать условия
                                 </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none d-xl-inline">
                                     <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                          />
                                 </svg>
@@ -434,22 +544,22 @@
                         </div>
                     </div>
 
-                    <div class=" col-6 ">
+                    <div class="col-6 d-none d-xl-block">
                         <img src="assets/img/partner.jpg " alt=" ">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="feedback">
+        <div class="feedback" id="feedback">
             <div class="feedback__container container text-center">
                 <h2 class="text-uppercase">ОТЗЫВЫ</h2>
                 <div class="description">
                     Наш сервис рекомендуют ведущие дизайнеры и их заказчики
                 </div>
-                <div class="row d-flex justify-content-center carousel-control">
-                    <div class="col-5 carousel__prev-wrapper text-end">
-                        <button>
+                <div class="row d-none d-xl-flex justify-content-center carousel-control">
+                    <div class="col-5 carousel__prev-wrapper text-end ">
+                        <button type="button" class="feedback_prev_btn">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                 <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
                                      />
@@ -458,7 +568,7 @@
                     </div>
                     <div class="col-2"></div>
                     <div class="col-5 carousel__next-wrapper text-start">
-                        <button>
+                        <button type="button" class="feedback_next_btn">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                 <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                      />
@@ -466,84 +576,134 @@
                         </button>
                     </div>
                 </div>
-                <div class="feedback__carousel">
-                    <div class="feedback__carousel-wrapper d-flex justify-content-between align-items-center">
-                        <div class="feedback__card">
-                            <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
-                            <div class="name">Имя Фамилия</div>
-                            <div class="title">Помогает начинающим дизайнерам</div>
-                            <div class="review">
-                                <div class="text-start">
-                                    <img src="assets/img/start-quta.svg" alt="">
-                                </div>
-                                <div class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                </div>
-                                <div class="text-end">
-                                    <img src="assets/img/end-quta.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feedback__card">
-                            <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
-                            <div class="name">Имя Фамилия</div>
-                            <div class="title">Помогает начинающим дизайнерам</div>
-                            <div class="review">
-                                <div class="text-start">
-                                    <img src="assets/img/start-quta.svg" alt="">
-                                </div>
-                                <div class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                </div>
-                                <div class="text-end">
-                                    <img src="assets/img/end-quta.svg" alt="">
+                <div class="feedback__carousel row">
+
+                    <div class="col-2 d-xl-none carousel__prev-wrapper">
+                        <button type="button" class="feedback_prev_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
+                                     />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="col-8 col-xl-12 owl-carousel owl-theme feedback__carousel-wrapper d-flex justify-content-between align-items-center" id="feedback_carousel">
+                        <div class="item feedback__item">
+                            <div class="feedback__card">
+                                <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
+                                <div class="name">Имя Фамилия</div>
+                                <div class="title">Помогает начинающим дизайнерам</div>
+                                <div class="review">
+                                    <div class="text-start">
+                                        <img src="assets/img/start-quta.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    </div>
+                                    <div class="text-end">
+                                        <img src="assets/img/end-quta.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="feedback__card">
-                            <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
-                            <div class="name">Имя Фамилия</div>
-                            <div class="title">Помогает начинающим дизайнерам</div>
-                            <div class="review">
-                                <div class="text-start">
-                                    <img src="assets/img/start-quta.svg" alt="">
-                                </div>
-                                <div class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                </div>
-                                <div class="text-end">
-                                    <img src="assets/img/end-quta.svg" alt="">
+
+                        <div class="item feedback__item">
+                            <div class="feedback__card item">
+                                <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
+                                <div class="name">Имя Фамилия</div>
+                                <div class="title">Помогает начинающим дизайнерам</div>
+                                <div class="review">
+                                    <div class="text-start">
+                                        <img src="assets/img/start-quta.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    </div>
+                                    <div class="text-end">
+                                        <img src="assets/img/end-quta.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="item feedback__item">
+                            <div class="feedback__card item">
+                                <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
+                                <div class="name">Имя Фамилия</div>
+                                <div class="title">Помогает начинающим дизайнерам</div>
+                                <div class="review">
+                                    <div class="text-start">
+                                        <img src="assets/img/start-quta.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    </div>
+                                    <div class="text-end">
+                                        <img src="assets/img/end-quta.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item feedback__item">
+                            <div class="feedback__card item">
+                                <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
+                                <div class="name">Имя Фамилия</div>
+                                <div class="title">Помогает начинающим дизайнерам</div>
+                                <div class="review">
+                                    <div class="text-start">
+                                        <img src="assets/img/start-quta.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    </div>
+                                    <div class="text-end">
+                                        <img src="assets/img/end-quta.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2 d-xl-none carousel__next-wrapper">
+                        <button type="button" class="feedback_next_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                     />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="callback container">
-            <div class="col-6">
+            <div class="col-xl-6">
                 <h2>Задайте вопрос, указав свои данные</h2>
                 <form action="" id="callback">
                     <div>
                         <input type="text" placeholder="Ваше имя">
                     </div>
                     <div>
-                        <input type="email" name="" id="" placeholder="Электронная почта">
+                        <input type="email" name="email" placeholder="Электронная почта">
                     </div>
                     <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                        <textarea name="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                     </div>
                     <p>Нажимая «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a></p>
-                    <button type="submit" class="btn-blue btn-arrow">
-                        <span>
-                            Зарегистрироваться
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                            <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
-                                 />
-                        </svg>
-                    </button>
+                    <div class="button-wrapper">
+                        <button type="submit" class="btn-blue btn-arrow">
+                            <span>
+                                Отправить
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none d-xl-inline">
+                                <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
+                                     />
+                            </svg>
+                        </button>
+                    </div>
+
                 </form>
             </div>
 
@@ -551,8 +711,8 @@
 
     </main>
     <footer>
-        <div class="footer-container container d-flex justify-content-between">
-            <div class="col-2 footer__logo d-flex align-items-center">
+        <div class="footer-container container d-block d-xl-flex justify-content-between">
+            <div class="col-2 footer__logo d-none d-xl-flex align-items-center">
                 <a href="#" class="d-flex align-items-center">
                     <img src="assets/img/logo.png" alt="FABRICА DESIGN SERVICE">
                     <div class="footer__text">
@@ -566,16 +726,16 @@
                 </a>
             </div>
 
-            <div class="footer__contacts d-flex col-9 row text-center align-items-center">
+            <div class="footer__contacts d-flex col-xl-9 row text-center align-items-center">
                 <div class="contacts row">
-                    <div class="col-5">
-                        <span class="title">Для поставщиков</span>
+                    <div class="col-xl-5">
+                        <span class="title d-block d-xl-inline">Для поставщиков</span>
                         <span class="contact">
                             <a href="tel:+79781234567">+7(978)123 45 67</a>
                         </span>
                     </div>
-                    <div class="col-7">
-                        <span class="title">Для пользователей приложения</span>
+                    <div class="col-xl-7">
+                        <span class="title d-block d-xl-inline">Для пользователей приложения</span>
                         <span class="contact">
                             <a href="tel:+79781234567">+7(978)123 45 67</a>
                         </span>
@@ -584,7 +744,7 @@
 
 
             </div>
-            <div class="footer__social d-flex justify-content-between align-items-center col-1">
+            <div class="footer__social d-none d-xl-flex justify-content-between align-items-center col-1">
                 <a href="#">
                     <img src="assets/img/instagram.svg" alt="">
                 </a>
@@ -601,28 +761,50 @@
             </div>
         </div>
         <div class="footer-container container d-flex justify-content-between">
-            <div class="col-2">
+            <div class="col-xl-2">
 
             </div>
 
-            <div class="footer__policy d-flex col-9 row text-center align-items-center">
+            <div class="footer__policy d-flex col-xl-9 row text-center align-items-center">
                 <div class="policy row">
-                    <div class="col-5">
+                    <div class="col-xl-5">
                         <span class="title">Политика конфиденциальности</span>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7">
                         <span class="title">Создание сайта WAYTOSTART</span>
                     </div>
                 </div>
 
 
             </div>
-            <div class="col-1">
+            <div class="col-xl-1">
 
             </div>
         </div>
+        <div class="footer__social d-flex d-xl-none justify-content-around align-items-center">
+            <a href="#">
+                <img src="assets/img/instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/img/yaoutube.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/img/facebook.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="assets/img/vimeo.svg" alt="">
+            </a>
+
+        </div>
 
     </footer>
+
+    <div class="scrollup">
+        <a href="#">
+            <img src="assets/img/scrollup.svg" alt="">
+        </a>
+
+    </div>
 
     <!-- Modal SignUp-->
     <div class="modal fade modal__signin" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -637,16 +819,16 @@
                 <div class="modal-body">
                     <div class="modal__tabs">
                         <div class="d-flex modal__tabs-control">
-                            <div id="tab_btn_signin" class="col-6 tab__button active">Вход</div>
+                            <div id="tab_btn_signin" class="col-6 tab__button active_tab">Вход</div>
                             <div id="tab_btn_signup" class="col-6 tab__button">Регистрация</div>
                         </div>
                         <div class="modal__tab" id="tab_signin">
-                            <form action=" " id="form_model_signin">
+                            <form action=" " id="form_modal_signin">
                                 <div>
-                                    <input type="email" name="email" id=" " placeholder="Электронная почта">
+                                    <input type="email" name="email" placeholder="Электронная почта">
                                 </div>
                                 <div>
-                                    <input type="password" name="pass" id=" " placeholder="Пароль">
+                                    <input type="password" name="pass" placeholder="Пароль">
                                 </div>
                                 <div class="forgot-pass">
                                     <a href="# ">Забыли  пароль ?</a>
@@ -675,40 +857,143 @@
                         </div>
 
                         <div class="modal__tab hidden" id="tab_signup">
-                            <form action=" " id="form_model_signup">
+                            <form action=" " id="form_modal_signup">
                                 <div>
-                                    <input type="email " name="email " id=" " placeholder="Электронная почта ">
+                                    <input type="email" name="email" placeholder="Электронная почта ">
                                 </div>
                                 <div>
-                                    <input type="password " name="pass " id=" " placeholder="Пароль ">
+                                    <input type="password" name="pass" placeholder="Пароль ">
                                 </div>
                                 <div>
-                                    <input type="password " name="pass " id=" " placeholder="Повторите пароль ">
+                                    <input type="password" name="repass" placeholder="Повторите пароль ">
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="modal__btn-submit">Зарегистрироваться</button>
                                 </div>
-                                <div class="text-center text-or ">
+                                <div class="text-center text-or">
                                     или
                                 </div>
                                 <div class="social__auth d-flex justify-content-between ">
                                     <a href=" ">
-                                        <img src="assets/img/auth-facebook.svg " alt=" ">
+                                        <img src="assets/img/auth-facebook.svg" alt=" ">
                                     </a>
                                     <a href=" ">
-                                        <img src="assets/img/auth-google.svg " alt=" ">
+                                        <img src="assets/img/auth-google.svg" alt=" ">
                                     </a>
                                     <a href=" ">
-                                        <img src="assets/img/auth-vk.svg " alt=" ">
+                                        <img src="assets/img/auth-vk.svg" alt=" ">
                                     </a>
                                     <a href=" ">
-                                        <img src="assets/img/auth-instagram.svg " alt=" ">
+                                        <img src="assets/img/auth-instagram.svg" alt=" ">
                                     </a>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SignUp Only-->
+    <div class="modal fade modal__signin" id="signUpOnlyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action=" " id="form_modal_signup_only">
+                        <h5 class="modal__title text-center">Регистрация</h5>
+
+                        <div>
+                            <input type="email" name="email" placeholder="Электронная почта ">
+                        </div>
+                        <div>
+                            <input type="password" name="pass" placeholder="Пароль ">
+                        </div>
+                        <div>
+                            <input type="password" name="repass" placeholder="Повторите пароль ">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="modal__btn-submit">Зарегистрироваться</button>
+                        </div>
+                        <div class="text-center text-or ">
+                            или
+                        </div>
+                        <div class="social__auth d-flex justify-content-between ">
+                            <a href=" ">
+                                <img src="assets/img/auth-facebook.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-google.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-vk.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-instagram.svg " alt=" ">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SignIn Only-->
+    <div class="modal fade modal__signin" id="signInOnlyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action=" " id="form_modal_signin_only">
+                        <h5 class="modal__title text-center">Вход</h5>
+                        <div>
+                            <input type="email" name="email" placeholder="Электронная почта">
+                        </div>
+                        <div>
+                            <input type="password" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="# ">Забыли  пароль ?</a>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="modal__btn-submit">Войти</button>
+                        </div>
+                        <div class="text-center text-or ">
+                            или
+                        </div>
+                        <div class="social__auth d-flex justify-content-between ">
+                            <a href=" ">
+                                <img src="assets/img/auth-facebook.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-google.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-vk.svg " alt=" ">
+                            </a>
+                            <a href=" ">
+                                <img src="assets/img/auth-instagram.svg " alt=" ">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
 
             </div>
         </div>
@@ -729,13 +1014,13 @@
                     <form action=" " id="form_model_signin">
                         <h5 class="modal__title text-center">Оставьте ваши контакты<br> и мы свяжемся с вами</h5>
                         <div>
-                            <input type="text" name="name" id=" " placeholder="Ваше имя">
+                            <input type="text" name="name" placeholder="Ваше имя">
                         </div>
                         <div>
-                            <input type="text" name="name" id=" " placeholder="Ваш телефон">
+                            <input type="text" name="phone" placeholder="Ваш телефон">
                         </div>
                         <div>
-                            <input type="email " name="email" id=" " placeholder="Электронная почта ">
+                            <input type="email " name="email" placeholder="Электронная почта ">
                         </div>
                         <div class="text-center">
                             <button type="submit" class="modal__btn-submit">Отправить</button>
