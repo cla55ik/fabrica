@@ -89,4 +89,25 @@ window.addEventListener('DOMContentLoaded', function() {
     $(".proj_prev_btn").click(function() {
         owl_proj.trigger("prev.owl.carousel");
     });
+
+
+
+
+    // var modalConfirm = document.getElementById('modal_confirm');
+    // var formSignUp = document.getElementById('form_modal_signup');
+    // var modalSignUp = document.getElementById('signUpModal');
+
+    // formSignUp.addEventListener('submit', function(event) {
+    //     console.log('form');
+    //     event.preventDefault();
+    //     modalSignUp.classList.remove('show');
+    //     modalConfirm.classList.toggle('hidden');
+    // })
+
+    var closeConfirm = document.getElementById('close_confirm');
+    var modalCongirm = document.getElementById('midal_confirm');
+
+    closeConfirm.addEventListener('click', function() {
+        modalCongirm.classList.toggle('hidden');
+    })
 })

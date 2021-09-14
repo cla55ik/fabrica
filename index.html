@@ -233,9 +233,8 @@
                     <div class="project__carousel-wrapper d-flex justify-content-center align-items-center"></div>
                     <div class="col-2 d-flex d-xl-none align-items-center">
                         <button id="proj_prev_btn" class="proj_prev_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <path d="M 52 7 L 2 7 L 5 4 A 1 1 0 0 0 4 3 L 0 7 A 1 1 0 0 0 0 8 L 4 12 A 1 1 0 0 0 5 11 L 2 8 L 52 8 L 52 7 Z"
-                                     />
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.82843 7.53556L0.646445 4.35358C0.451183 4.15832 0.451183 3.84174 0.646445 3.64647L3.82843 0.464492C4.02369 0.26923 4.34027 0.26923 4.53553 0.464492C4.73079 0.659755 4.73079 0.976337 4.53553 1.1716L2.20711 3.50003L16 3.50003V4.50003L2.20711 4.50003L4.53553 6.82845C4.73079 7.02372 4.73079 7.3403 4.53553 7.53556C4.34027 7.73082 4.02369 7.73082 3.82843 7.53556Z" fill="#626262"/>
                             </svg>
                         </button>
                     </div>
@@ -262,15 +261,14 @@
 
                     <div class="col-2 d-flex d-xl-none align-items-center">
                         <button id="proj_next_btn" class="proj_next_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
-                                     />
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1716 0.46444L15.3536 3.64642C15.5488 3.84168 15.5488 4.15826 15.3536 4.35353L12.1716 7.53551C11.9763 7.73077 11.6597 7.73077 11.4645 7.53551C11.2692 7.34025 11.2692 7.02366 11.4645 6.8284L13.7929 4.49997L0 4.49997L0 3.49997L13.7929 3.49997L11.4645 1.17155C11.2692 0.976284 11.2692 0.659702 11.4645 0.46444C11.6597 0.269178 11.9763 0.269178 12.1716 0.46444Z" fill="#626262"/>
                             </svg>
                         </button>
                     </div>
                 </div>
 
-                <div class="row d-flex justify-content-center">
+                <div class="row d-none d-xl-flex justify-content-center">
                     <div class="col-5 carousel__prev-wrapper text-end">
                         <button id="proj_prev_btn" class="proj_prev_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -315,6 +313,9 @@
         </div>
 
         <div class="price" id="price">
+            <div class="d-block d-md-none price__bg-mobile">
+
+            </div>
             <div class="price__container container">
                 <h2>Стоимость</h2>
                 <div class="price__list d-flex flex-wrap justify-content-between align-items-center">
@@ -484,6 +485,7 @@
         </div>
 
         <div class="partner" id="partner">
+            <p class="d-block d-xl-none title__mob">Поставщикам</p>
             <div class="partner__container container">
                 <h2 class="text-center text-uppercase">как стать партнером сервиса</h2>
                 <div class=" description text-center ">Демонстрируйте свои товары дизайнерам и клиентам<br> с самого старта их дизайн-проекта</div>
@@ -830,7 +832,7 @@
                                 <div>
                                     <input type="password" name="pass" placeholder="Пароль">
                                 </div>
-                                <div class="forgot-pass">
+                                <div class="forgot-pass" id="forgot_pass">
                                     <a href="# ">Забыли  пароль ?</a>
                                 </div>
                                 <div class="text-center">
@@ -1011,7 +1013,7 @@
           </button>
                 </div>
                 <div class="modal-body">
-                    <form action=" " id="form_model_signin">
+                    <form action=" " id="form_modal_callback">
                         <h5 class="modal__title text-center">Оставьте ваши контакты<br> и мы свяжемся с вами</h5>
                         <div>
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -1020,7 +1022,14 @@
                             <input type="text" name="phone" placeholder="Ваш телефон">
                         </div>
                         <div>
-                            <input type="email " name="email" placeholder="Электронная почта ">
+                            <input type="email" name="email" placeholder="Электронная почта ">
+                        </div>
+                        <div class="subscribe">
+                            <input type="checkbox" class="subscribe-checkbox" id="subscribe" name="subscribe">
+                            <label for="sudscribe">Я согласен получать новости на e-mail</label>
+                        </div>
+                        <div class="callback__policy">
+                            Нажимая «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="modal__btn-submit">Отправить</button>
@@ -1033,6 +1042,29 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Confirm -->
+    <div class="modal__confirm" id="midal_confirm">
+        <div class="container">
+            <div class="modal__confirm-header">
+                <h5 class="modal-title" id="callbackModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_confirm">
+                    <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+                </button>
+            </div>
+            <div class="modal__confirm-body d-flex flex-wrap">
+                <div class="col-12 col-xl-2">
+                    <img src="assets/img/envelope.svg" alt="">
+                </div>
+                <div class="col-12 col-xl-10">
+                    <p>Письмо с подтверждением электронной почты было выслано на ваш адрес.</p>
+                    <p>Прежде чем продолжить, проверьте свою электронную почту на наличие ссылки для подтверждения. Если вы не получили письмо, можете повторно запросить его <a href="">здесь.</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

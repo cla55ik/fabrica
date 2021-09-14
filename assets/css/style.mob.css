@@ -24,9 +24,20 @@ html {
 }
 
 @media screen and (max-width:475px) {
+    .btn-blue,
+    .btn-arrow,
+    .btn-transparent {
+        font-size: 14px;
+        line-height: 17px;
+    }
     .header-container {
         padding-top: 14px;
         padding-bottom: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__contacts div {
+        font-size: 10px;
     }
     .header__text {
         margin-bottom: 7px;
@@ -47,9 +58,15 @@ html {
     }
     .header__contacts {
         text-align: center;
+    }
+    .header__contacts .title,
+    .header__contacts .contact,
+    .header__contacts .contact a {
+        text-align: center;
         font-size: 7px;
         line-height: 10px;
         color: #fff;
+        padding: 0;
     }
     .header__contacts .title {
         color: #fff;
@@ -168,6 +185,9 @@ html {
         margin: 0;
         margin-top: 16px;
     }
+    .project-item img {
+        height: 160px;
+    }
     /* CTA */
     .signup__section-wrapper {
         padding-left: 15px;
@@ -190,11 +210,20 @@ html {
         margin-bottom: 25px;
     }
     /* price */
+    .price__bg-mobile {
+        height: 195px;
+        background-image: url(../img/bg-price.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .price {
+        position: relative;
+        z-index: 2;
         padding-top: 0;
         background: none;
     }
     .price__container {
+        margin-top: -180px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -209,10 +238,15 @@ html {
         margin-top: 6px;
     }
     .price__card {
+        border-color: var(--light-gray);
         height: 275px;
         margin-bottom: 12px;
         width: 100%;
         padding: 35px 30px;
+    }
+    .price__card .last-price::before {
+        width: 30%;
+        height: 40%;
     }
     .price__card .title h3 {
         font-size: 14px;
@@ -247,6 +281,7 @@ html {
         letter-spacing: 0.04em;
         color: var(--dark-gray);
         text-align: start;
+        margin-bottom: 35px;
     }
     .price__after {
         padding-left: 15px;
@@ -288,11 +323,24 @@ html {
         padding: 170px 0;
     }
     /* parthner */
+    .title__mob {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 36px;
+        /* identical to box height, or 225% */
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--bg-btn);
+        padding: 17px 0;
+    }
     .partner {
         padding-bottom: 0;
     }
     .partner__container {
         padding-bottom: 40px;
+        margin-top: 0;
+        border: none;
     }
     .partner__container h2 {
         font-size: 16px;
@@ -463,6 +511,11 @@ html {
         padding-top: 25px;
     }
     /* MODAL */
+    .modal-header img {
+        width: 15px;
+        height: auto;
+        object-fit: contain;
+    }
     .modal__signin .modal-content {
         padding: 10px;
     }
@@ -473,6 +526,40 @@ html {
         font-size: 16px;
     }
     .modal__btn-submit {
-        width: auto;
+        width: 100%;
+    }
+    .forgot-pass {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .forgot-pass a {
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        letter-spacing: 0.08em;
+    }
+    .text-or {
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        letter-spacing: 0.08em;
+    }
+    form#form_modal_signin input,
+    form#form_modal_signin_only input,
+    form#form_modal_signup input,
+    form#form_modal_signup_only input {
+        margin-bottom: 15px;
+    }
+    .modal__confirm {
+        padding: 15px 15px 50px 15px;
+    }
+    .modal__confirm p {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.08em;
+    }
+    .modal__confirm .col-12.col-xl-2 {
+        text-align: center;
+        margin-bottom: 35px;
     }
 }

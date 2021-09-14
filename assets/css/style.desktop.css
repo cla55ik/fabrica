@@ -71,6 +71,15 @@ a {
 @font-face {
     font-family: 'MontserratR';
     src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratR';
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
 }
 
 :root {
@@ -100,6 +109,8 @@ button {
 }
 
 .btn-blue {
+    font-size: 16px;
+    line-height: 20px;
     transition: all ease 0.5s;
     background: var(--bg-btn);
     color: #fff;
@@ -144,6 +155,20 @@ input {
 
 
 /* hovers */
+
+.feedback_next_btn:hover>svg {
+    fill: var(--bg-btn);
+}
+
+.btn-transparent:hover>span {
+    transition: all ease 0.2s;
+    color: var(--bg-btn);
+}
+
+.btn-transparent:hover>span>svg {
+    transition: all ease 0.2s;
+    fill: var(--bg-btn);
+}
 
 .project__carousel img:hover {
     transition: all ease 0.5s;
@@ -613,6 +638,16 @@ div#project_slider .owl-stage-outer .owl-stage {
     text-align: center;
     letter-spacing: 0.08em;
     color: var(--light-gray);
+    position: relative;
+}
+
+.price__card .last-price::before {
+    border-bottom: 1px solid #626262;
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 70%;
+    transform: rotate(-22deg);
 }
 
 .price__card .curr-price {
@@ -641,10 +676,12 @@ div#project_slider .owl-stage-outer .owl-stage {
 }
 
 button.btn-transparent svg {
+    transition: all ease 0.2s;
     fill: #626262;
 }
 
 button.btn-transparent {
+    transition: all ease 0.2s;
     color: var(--dark-gray);
     margin-top: 10px;
 }
@@ -1009,6 +1046,7 @@ form#form_modal_signin_only input {
 
 .text-or {
     margin: 24px 0;
+    color: #626262;
 }
 
 .social__auth {
@@ -1041,6 +1079,149 @@ form#form_modal_signup_only input {
     text-align: center;
     letter-spacing: 0.04em;
     color: #000000;
+}
+
+
+/* Modal callback */
+
+form#form_modal_callback input[type="text"],
+form#form_modal_callback input[type="email"] {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+form#form_modal_callback .subscribe {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    letter-spacing: 0.08em;
+    color: #000000;
+}
+
+
+/* modal__confirm */
+
+.modal__confirm {
+    background-color: #fff;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    -webkit-box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.modal__confirm-header {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+
+.modal__confirm p {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    color: #000000;
+}
+
+.modal-confirm-body a {
+    text-decoration: underline;
+    color: var(--bg-btn);
+}
+
+
+/* CHECKBOX */
+
+input#subscribe {
+    margin-right: 20px;
+}
+
+.subscribe-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.subscribe-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.subscribe-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70% 70%;
+}
+
+.subscribe-checkbox:checked+label::before {
+    border-color: var(--bg-btn);
+    background-color: #fff;
+    /* background-image: url("assets/img/checked.svg"); */
+}
+
+
+/* стили при наведении курсора на checkbox */
+
+.subscribe-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: var(--bg-btn);
+}
+
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+
+.subscribe-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: var(--bg-btn);
+}
+
+
+/* стили для чекбокса, находящегося в фокусе */
+
+.subscribe-checkbox:focus+label::before {
+    border-color: var(--bg-btn);
+}
+
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+
+.subscribe-checkbox:focus:not(:checked)+label::before {
+    border-color: var(--bg-btn);
+}
+
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+
+.subscribe-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+.callback__policy {
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    letter-spacing: 0.08em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.callback__policy a {
+    text-decoration: none;
+    color: var(--bg-btn);
 }
 
 
