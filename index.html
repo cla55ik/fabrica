@@ -13,7 +13,7 @@
     <!-- <script src="assets/js/jquery.min.js"></script> -->
     <!-- <script src="assets/js/bootstrap.min.js"></script> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -309,6 +309,9 @@
                         </svg>
                     </button>
                 </form>
+                <div id="signup_msg">
+
+                </div>
             </div>
         </div>
 
@@ -685,7 +688,7 @@
                 <h2>Задайте вопрос, указав свои данные</h2>
                 <form action="" id="callback">
                     <div>
-                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" name="name" placeholder="Ваше имя">
                     </div>
                     <div>
                         <input type="email" name="email" placeholder="Электронная почта">
@@ -694,6 +697,7 @@
                         <textarea name="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                     </div>
                     <p>Нажимая «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a></p>
+                    <div id="callback_msg"></div>
                     <div class="button-wrapper">
                         <button type="submit" class="btn-blue btn-arrow">
                             <span>
@@ -707,6 +711,7 @@
                     </div>
 
                 </form>
+
             </div>
 
         </div>
@@ -728,7 +733,7 @@
                 </a>
             </div>
 
-            <div class="footer__contacts d-flex col-xl-9 row text-center align-items-center">
+            <div class="footer__contacts d-flex col-xl-8 row text-center align-items-center">
                 <div class="contacts row">
                     <div class="col-xl-5">
                         <span class="title d-block d-xl-inline">Для поставщиков</span>
@@ -746,7 +751,7 @@
 
 
             </div>
-            <div class="footer__social d-none d-xl-flex justify-content-between align-items-center col-1">
+            <div class="footer__social d-none d-xl-flex justify-content-between align-items-center col-2">
                 <a href="#">
                     <img src="assets/img/instagram.svg" alt="">
                 </a>
@@ -835,6 +840,7 @@
                                 <div class="forgot-pass" id="forgot_pass">
                                     <a href="# ">Забыли  пароль ?</a>
                                 </div>
+                                <div id="form_modal_signin_msg"></div>
                                 <div class="text-center">
                                     <button type="submit" class="modal__btn-submit">Войти</button>
                                 </div>
@@ -861,10 +867,10 @@
                         <div class="modal__tab hidden" id="tab_signup">
                             <form action=" " id="form_modal_signup">
                                 <div>
-                                    <input type="email" name="email" placeholder="Электронная почта ">
+                                    <input type="email" name="email" placeholder="Электронная почта">
                                 </div>
                                 <div>
-                                    <input type="password" name="pass" placeholder="Пароль ">
+                                    <input type="password" name="pass" placeholder="Пароль">
                                 </div>
                                 <div>
                                     <input type="password" name="repass" placeholder="Повторите пароль ">
@@ -914,10 +920,10 @@
                         <h5 class="modal__title text-center">Регистрация</h5>
 
                         <div>
-                            <input type="email" name="email" placeholder="Электронная почта ">
+                            <input type="email" name="email" placeholder="Электронная почта">
                         </div>
                         <div>
-                            <input type="password" name="pass" placeholder="Пароль ">
+                            <input type="password" name="pass" placeholder="Пароль">
                         </div>
                         <div>
                             <input type="password" name="repass" placeholder="Повторите пароль ">
@@ -1022,7 +1028,7 @@
                             <input type="text" name="phone" placeholder="Ваш телефон">
                         </div>
                         <div>
-                            <input type="email" name="email" placeholder="Электронная почта ">
+                            <input type="email" name="email" placeholder="Электронная почта">
                         </div>
                         <div class="subscribe">
                             <input type="checkbox" class="subscribe-checkbox" id="subscribe" name="subscribe">
@@ -1044,7 +1050,7 @@
     </div>
 
     <!-- Modal Confirm -->
-    <div class="modal__confirm" id="midal_confirm">
+    <div class="modal__confirm hidden" id="modal_confirm">
         <div class="container">
             <div class="modal__confirm-header">
                 <h5 class="modal-title" id="callbackModalLabel"></h5>
@@ -1061,6 +1067,23 @@
                     <p>Прежде чем продолжить, проверьте свою электронную почту на наличие ссылки для подтверждения. Если вы не получили письмо, можете повторно запросить его <a href="">здесь.</a></p>
                 </div>
             </div>
+        </div>
+
+    </div>
+
+    <!-- Modal Request OK -->
+    <div class="modal__msg hidden" id="modal_msg">
+
+        <div class="container d-flex">
+            <div class="col-10 modal__msg-text d-flex flex-wrap" id="modal_msg_text">
+
+            </div>
+            <div class="col-2 modal__msg-header d-flex justify-content-end">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_msg">
+                    <span aria-hidden="true"><img src="assets/img/cross.svg" alt=""></span>
+                </button>
+            </div>
+
         </div>
 
     </div>

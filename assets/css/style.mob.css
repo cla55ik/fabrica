@@ -23,7 +23,7 @@ html {
     width: 100vw;
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:576px) {
     .btn-blue,
     .btn-arrow,
     .btn-transparent {
@@ -510,6 +510,9 @@ html {
     .footer__policy .col-xl-7 {
         padding-top: 25px;
     }
+    .footer__social {
+        padding-left: 0;
+    }
     /* MODAL */
     .modal-header img {
         width: 15px;
@@ -542,6 +545,19 @@ html {
         font-size: 14px;
         line-height: 17px;
         /* identical to box height */
+        letter-spacing: 0.08em;
+    }
+    .modal__title {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
+    }
+    .subscribe label {
+        font-size: 10px;
+        line-height: 20px;
+        /* identical to box height, or 200% */
         letter-spacing: 0.08em;
     }
     form#form_modal_signin input,

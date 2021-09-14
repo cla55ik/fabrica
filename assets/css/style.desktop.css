@@ -17,27 +17,14 @@ svg {
     background: rgba(101, 137, 241, 0.5);
 }
 
-.carousel__prev-wrapper svg,
-.carousel__next-wrapper svg {
+.proj_next_btn svg,
+.proj_prev_btn svg {
     fill: var(--light-gray);
 }
 
-.feedback__container .carousel-control .carousel__next-wrapper svg,
-.feedback__container .carousel-control .carousel__prev-wrapper svg {
+.feedback_next_btn svg,
+.feedback_prev_btn svg {
     fill: var(--gray-btn);
-}
-
-.feedback__carousel .carousel__prev-wrapper svg,
-.feedback__carousel .carousel__next-wrapper svg {
-    fill: var(--gray-btn);
-}
-
-.carousel__next-wrapper svg:hover {
-    fill: var(--bg-btn);
-}
-
-.carousel__prev-wrapper svg:hover {
-    fill: var(--bg-btn);
 }
 
 .login-btn svg:hover {
@@ -156,7 +143,19 @@ input {
 
 /* hovers */
 
+.proj_next_btn:hover>svg {
+    fill: var(--bg-btn);
+}
+
+.proj_prev_btn:hover>svg {
+    fill: var(--bg-btn);
+}
+
 .feedback_next_btn:hover>svg {
+    fill: var(--bg-btn);
+}
+
+.feedback_prev_btn:hover>svg {
     fill: var(--bg-btn);
 }
 
@@ -250,7 +249,10 @@ textarea:-moz-ui-invalid {
 }
 
 .price__card:hover {
-    /* transition: all ease 0.5s; */
+    box-shadow: 0px 4px 40px 15px var(--bg-btn);
+    -webkit-box-shadow: 0px 4px 40px 15px var(--bg-btn);
+    -moz-box-shadow: 0px 4px 40px 15px var(--bg-btn);
+    transition: all ease 0.2s;
     border: 2px solid var(--bg-btn);
 }
 
@@ -591,7 +593,7 @@ div#project_slider .owl-stage-outer .owl-stage {
 }
 
 .price__card {
-    /* transition: all ease 0.5s; */
+    transition: all ease 0.2s;
     min-height: 370px;
     width: 24%;
     background: #FFFFFF;
@@ -988,11 +990,16 @@ footer a {
     color: #979797;
 }
 
+.footer__social {
+    padding-left: 30px;
+}
+
 
 /* MODAL */
 
 .modal-content {
     border-radius: 0;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
 }
 
 .modal-content .modal-header,
@@ -1238,3 +1245,25 @@ input#subscribe {
 
 
 /* MOBILE */
+
+.form__msg {
+    padding: 30px;
+    font-weight: 500;
+}
+
+.modal__msg {
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    z-index: 9990;
+}
+
+.modal__msg-text {
+    justify-content: center;
+}

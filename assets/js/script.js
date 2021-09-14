@@ -93,6 +93,64 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+    // forms Senders
+
+    $("#signup").submit(function(event) {
+
+        event.preventDefault();
+        submitFormSignUp("signup", "signup");
+    });
+
+
+    $("#form_modal_signup").submit(function(event) {
+
+        event.preventDefault();
+        submitFormSignUp("form_modal_signup", "signup");
+    });
+    $("#form_modal_signup_only").submit(function(event) {
+
+        event.preventDefault();
+        submitFormSignUp("form_modal_signup_only", "signup");
+    });
+
+
+
+
+
+    $("#callback").submit(function(event) {
+
+        event.preventDefault();
+        submitForm("callback", "callback");
+    });
+
+
+
+    $("#form_modal_callback").submit(function(event) {
+
+        event.preventDefault();
+        submitForm("form_modal_callback", "callback");
+    });
+
+    $("#form_modal_signin").submit(function(event) {
+
+        event.preventDefault();
+        submitForm("form_modal_signin", "signin");
+    });
+
+    $("#form_modal_signin_only").submit(function(event) {
+
+        event.preventDefault();
+        submitForm("form_modal_signin", "signin");
+    });
+
+
+
+
+
+
+
     // var modalConfirm = document.getElementById('modal_confirm');
     // var formSignUp = document.getElementById('form_modal_signup');
     // var modalSignUp = document.getElementById('signUpModal');
@@ -105,9 +163,75 @@ window.addEventListener('DOMContentLoaded', function() {
     // })
 
     var closeConfirm = document.getElementById('close_confirm');
-    var modalCongirm = document.getElementById('midal_confirm');
+    var modalCongirm = document.getElementById('modal_confirm');
 
     closeConfirm.addEventListener('click', function() {
         modalCongirm.classList.toggle('hidden');
     })
+
+    var closeModalMsg = document.getElementById('close_msg');
+    var modalMsg = document.getElementById('modal_msg');
+
+    closeModalMsg.addEventListener('click', function() {
+        modalMsg.classList.toggle('hidden');
+    })
 })
+
+
+function submitFormSignUp(form_id, type) {
+
+    var form = $('#' + form_id);
+    var msg = form.serialize() + '&type=' + type;
+    console.log($);
+    $('#modal_msg').addClass('hidden');
+    $.ajax({
+        type: "POST",
+        url: "/test.php",
+        data: msg,
+        success: function(text) {
+            var data = JSON.parse(text)
+            if (data == 'ok') {
+                $(".modal").modal("hide");
+                formSuccess('modal_confirm');
+            } else {
+                $('#modal_msg_text').html(data);
+                $('#modal_msg').removeClass('hidden');
+            }
+
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+}
+
+function submitForm(form_id, type) {
+
+    var form = $('#' + form_id);
+    var msg = form.serialize() + '&type=' + type;
+    $('#modal_msg').addClass('hidden');
+    $.ajax({
+        type: "POST",
+        url: "/test.php",
+        data: msg,
+        success: function(text) {
+            var data = JSON.parse(text)
+            if (data == 'Спасибо, данные отправлены') {
+                $(".modal").modal("hide");
+                $('#modal_msg_text').html(data);
+                $('#modal_msg').removeClass('hidden');
+            } else {
+                $('#modal_msg_text').html(data);
+                $('#modal_msg').removeClass('hidden');
+            }
+
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+}
+
+function formSuccess(modal_id) {
+    $("#" + modal_id).removeClass("hidden");
+}
