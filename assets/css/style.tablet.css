@@ -8,6 +8,16 @@
     .container {
         max-width: 576px;
     }
+    .modal__tab {
+        padding-top: 65px;
+    }
+    .header__login-btn,
+    .header__login {
+        justify-content: end;
+    }
+    .header__login-text {
+        margin: 0;
+    }
     /* main */
     .section__cta {
         padding-bottom: 25px;
@@ -107,9 +117,15 @@
     .container-sm {
         max-width: 100%;
     }
-    .owl-carousel .owl-item img {
-        width: 100%;
+    .item.project-item {
+        margin: 0 5px;
+    }
+    .project-item img {
+        width: 100% !important;
         height: 295px;
+    }
+    .carousel__wrapper .owl-stage {
+        margin-left: -25%;
     }
     /* CTA */
     .signup__tablet-title {
@@ -217,6 +233,15 @@
     .partner {
         background: none;
     }
+    .partner .blue-title-tablet {
+        background: rgba(101, 137, 241, 0.5);
+        padding: 35px 0;
+        color: #fff;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
     .partner .title__mob {
         font-weight: 500;
         font-size: 24px;
@@ -231,6 +256,7 @@
     }
     .partner__container {
         border: none;
+        margin-top: 0;
     }
     .partner__container h2 {
         font-weight: normal;
@@ -247,6 +273,7 @@
         margin: 30px 0;
     }
     .partner__profit-item {
+        justify-content: center;
         margin: 0px 30px 25px 30px;
     }
     .partner__profit-item .profit__icon {
@@ -268,5 +295,67 @@
         text-align: center;
         margin-top: 40px;
         margin-bottom: 10px;
+    }
+    /* feedback */
+    .feedback__title-tablet .title {
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.04em;
+    }
+    .feedback__title-tablet .description {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin: 23px 0;
+    }
+    .feedback {
+        padding-top: 43px;
+    }
+    .feedback__container .carousel-control {
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .feedback__carousel-wrapper .owl-stage {
+        margin-left: -25%;
+    }
+    .feedback__card {
+        padding: 30px 30px 20px 30px;
+    }
+    .feedback__card-img {
+        width: 120px !important;
+        height: 120px;
+        object-fit: cover;
+    }
+    .feedback__card .title {
+        margin-bottom: 4px;
+    }
+    /* callback  */
+    .callback {
+        margin-top: 45px;
+        margin-bottom: 55px;
+    }
+    /* footer */
+    .footer__logo {
+        margin-top: 22px;
+        margin-bottom: 37px;
+        justify-content: center;
+    }
+    .footer__text .title {
+        margin-bottom: 4px;
+    }
+    .footer__contacts .title {
+        text-align: center;
+    }
+    .policy {
+        padding-top: 26px !important;
+    }
+    .footer__social {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        justify-content: center !important;
+    }
+    .footer__social a {
+        margin: 0 7px;
     }
 }

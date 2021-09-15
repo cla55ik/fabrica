@@ -16,6 +16,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/maskedinput.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <title>Fabrica design service</title>
@@ -55,22 +56,24 @@
                 </div>
             </div>
             <div class="header__login d-flex align-items-center">
+                <button class="header__login-btn d-flex align-items-center" type="button" data-toggle="modal" data-target="#signUpModal">
                 <div class="header__login-text">
-                    <div class="enter">
+                    <div class="enter text-start">
                         ВХОД
                     </div>
-                    <div class="signup">
+                    <div class="signup text-start">
                         РЕГИСТРАЦИЯ
                     </div>
                 </div>
-                <div class="login-btn">
-                    <button type="button" data-toggle="modal" data-target="#signUpModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <div class="login-btn d-none d-xl-block">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                             <path d="M 0 7 L 49 7 L 46 4 A 1 1 0 0 1 47 3 L 51 7 A 1 1 0 0 1 51 8 L 47 12 A 1 1 0 0 1 46 11 L 49 8 L 0 8 L 0 7 Z"
                                  />
                         </svg>
-                    </button>
+
                 </div>
+                </button>
             </div>
         </div>
 
@@ -562,8 +565,9 @@
 
         <div class="partner" id="partner">
             <p class="d-block d-xl-none title__mob">Поставщикам</p>
+            <p class="d-none d-md-block d-xl-none blue-title-tablet text-uppercase text-center">как стать партнером сервиса</p>
             <div class="partner__container container">
-                <h2 class="text-center text-uppercase">как стать партнером сервиса</h2>
+                <h2 class="d-block d-md-none d-xl-block text-center text-uppercase">как стать партнером сервиса</h2>
                 <div class="description text-center d-block d-xl-none">Демонстрируйте свои товары дизайнерам и&nbsp;клиентам с&nbsp;самого старта их&nbsp;дизайн-проекта</div>
                 <div class="description text-center d-none d-xl-block">Демонстрируйте свои товары дизайнерам и&nbsp;клиентам <br /> с&nbsp;самого старта их&nbsp;дизайн-проекта</div>
                 <div class="row">
@@ -630,10 +634,17 @@
             </div>
         </div>
 
+        <div class="feedback__title-tablet container d-none d-md-block d-xl-none">
+            <div class="title text-uppercase text-center">ОТЗЫВЫ</div>
+            <div class="description">
+                Наш сервис рекомендуют ведущие дизайнеры и&nbsp;их&nbsp;заказчики
+            </div>
+        </div>
         <div class="feedback" id="feedback">
-            <div class="feedback__container container text-center">
-                <h2 class="text-uppercase">ОТЗЫВЫ</h2>
-                <div class="description">
+
+            <div class="feedback__container container-sm container-fluid container-xl text-center">
+                <h2 class="text-uppercase d-block d-md-none d-xl-block">ОТЗЫВЫ</h2>
+                <div class="description d-block d-md-none d-xl-block">
                     Наш сервис рекомендуют ведущие дизайнеры и их заказчики
                 </div>
                 <div class="row d-none d-md-flex justify-content-center carousel-control">
@@ -666,7 +677,7 @@
                         </button>
                     </div>
 
-                    <div class="col-8 col-xl-12 owl-carousel owl-theme feedback__carousel-wrapper d-flex justify-content-between align-items-center" id="feedback_carousel">
+                    <div class="col-8 col-md-12 owl-carousel owl-theme feedback__carousel-wrapper d-flex justify-content-between align-items-center" id="feedback_carousel">
                         <div class="item feedback__item">
                             <div class="feedback__card">
                                 <img class="feedback__card-img" src="assets/img/feedback1.jpg" alt="">
@@ -793,7 +804,7 @@
     </main>
     <footer>
         <div class="footer-container container d-block d-xl-flex justify-content-between">
-            <div class="col-2 footer__logo d-none d-xl-flex align-items-center">
+            <div class="col-12 col-xl-2 footer__logo d-none d-md-flex align-items-center">
                 <a href="#" class="d-flex align-items-center">
                     <img src="assets/img/logo.png" alt="FABRICА DESIGN SERVICE">
                     <div class="footer__text">
@@ -810,13 +821,13 @@
             <div class="footer__contacts d-flex col-xl-8 row text-center align-items-center">
                 <div class="contacts row">
                     <div class="col-xl-5">
-                        <span class="title d-block d-xl-inline">Для поставщиков</span>
+                        <span class="title d-block d-md-inline">Для поставщиков</span>
                         <span class="contact">
                             <a href="tel:+79781234567">+7(978)123 45 67</a>
                         </span>
                     </div>
                     <div class="col-xl-7">
-                        <span class="title d-block d-xl-inline">Для пользователей приложения</span>
+                        <span class="title d-block d-md-inline">Для пользователей приложения</span>
                         <span class="contact">
                             <a href="tel:+79781234567">+7(978)123 45 67</a>
                         </span>
@@ -846,12 +857,12 @@
 
             </div>
 
-            <div class="footer__policy d-flex col-xl-9 row text-center align-items-center">
+            <div class="footer__policy d-flex col-md-12 col-xl-9 row text-center align-items-center">
                 <div class="policy row">
-                    <div class="col-xl-5">
+                    <div class="col-md-6 col-xl-5">
                         <span class="title">Политика конфиденциальности</span>
                     </div>
-                    <div class="col-xl-7">
+                    <div class="col-md-6 col-xl-7">
                         <span class="title">Создание сайта WAYTOSTART</span>
                     </div>
                 </div>
@@ -1099,7 +1110,7 @@
                             <input type="text" name="name" placeholder="Ваше имя">
                         </div>
                         <div>
-                            <input type="text" name="phone" placeholder="Ваш телефон">
+                            <input type="text" name="phone" class="mask-phone" placeholder="Ваш телефон">
                         </div>
                         <div>
                             <input type="email" name="email" placeholder="Электронная почта">

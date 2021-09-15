@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-
+    $('.mask-phone').mask('+7 (999) 999-99-99');
 
 
     $('#project_slider').owlCarousel({
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
             1000: {
                 items: 3
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
             1000: {
                 items: 3
