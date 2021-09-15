@@ -1120,8 +1120,15 @@
                             <input type="email" name="email" placeholder="Электронная почта">
                         </div>
                         <div class="subscribe">
-                            <input type="checkbox" class="subscribe-checkbox" id="subscribe" name="subscribe">
-                            <label for="sudscribe">Я согласен получать новости на e-mail</label>
+                            <!-- <input type="checkbox" class="subscribe-checkbox" id="subscribe" name="subscribe">
+                            <label for="sudscribe">Я согласен получать новости на e-mail</label> -->
+                            <label class="custom-checkbox">
+                                <input class="hidden-checkbox" type="checkbox">
+                                <div class="checkbox"> 
+                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#6589F1" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                                    </div>
+                                    Я согласен получать новости на e-mail
+                            </label>
                         </div>
                         <div class="callback__policy">
                             Нажимая «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a>

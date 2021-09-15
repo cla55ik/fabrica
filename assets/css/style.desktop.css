@@ -71,7 +71,7 @@ a {
     /* font-display: swap; */
 }
 
-:root {
+ :root {
     --dark-gray: #3F3939;
     --light-gray: #DDDDDD;
     --bg-btn: #6589F1;
@@ -1173,82 +1173,6 @@ form#form_modal_callback .subscribe {
     color: var(--bg-btn);
 }
 
-
-/* CHECKBOX */
-
-input#subscribe {
-    margin-right: 20px;
-}
-
-.subscribe-checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.subscribe-checkbox+label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-}
-
-.subscribe-checkbox+label::before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #adb5bd;
-    border-radius: 0;
-    margin-right: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70% 70%;
-}
-
-.subscribe-checkbox:checked+label::before {
-    border-color: var(--bg-btn);
-    background-color: #fff;
-    /* background-image: url("assets/img/checked.svg"); */
-}
-
-
-/* стили при наведении курсора на checkbox */
-
-.subscribe-checkbox:not(:disabled):not(:checked)+label:hover::before {
-    border-color: var(--bg-btn);
-}
-
-
-/* стили для активного состояния чекбокса (при нажатии на него) */
-
-.subscribe-checkbox:not(:disabled):active+label::before {
-    background-color: #b3d7ff;
-    border-color: var(--bg-btn);
-}
-
-
-/* стили для чекбокса, находящегося в фокусе */
-
-.subscribe-checkbox:focus+label::before {
-    border-color: var(--bg-btn);
-}
-
-
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-
-.subscribe-checkbox:focus:not(:checked)+label::before {
-    border-color: var(--bg-btn);
-}
-
-
-/* стили для чекбокса, находящегося в состоянии disabled */
-
-.subscribe-checkbox:disabled+label::before {
-    background-color: #e9ecef;
-}
-
 .callback__policy {
     font-size: 12px;
     line-height: 20px;
@@ -1302,6 +1226,72 @@ input#subscribe {
 
 .modal__msg-text {
     justify-content: center;
+}
+
+
+/* CHECKBOX */
+
+input#subscribe {
+    margin-right: 20px;
+}
+
+input.hidden-checkbox {
+    border: none;
+    background: none;
+}
+
+input.hidden-checkbox:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox .checkbox {
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--light-gray);
+    background: #fff;
+}
+
+.checkbox:hover {
+    transition: all ease 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: none;
+}
+
+.custom-checkbox input:checked~.checkbox .checkmark {
+    display: block;
+}
+
+.custom-checkbox input:checked~.checkbox {
+    background: #FFF;
+    border: 1px solid var(--light-gray);
 }
 
 
