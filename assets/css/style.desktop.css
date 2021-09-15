@@ -60,6 +60,7 @@ a {
     src: url(../fonts/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    /* font-display: swap; */
 }
 
 @font-face {
@@ -67,6 +68,7 @@ a {
     src: url(../fonts/Montserrat-Medium.ttf);
     font-weight: 500;
     font-style: normal;
+    /* font-display: swap; */
 }
 
 :root {
@@ -111,6 +113,10 @@ button {
     color: #FFFFFF;
     padding: 17px 25px;
     cursor: pointer;
+}
+
+.btn-arrow svg {
+    margin-left: 20px;
 }
 
 input {
@@ -249,9 +255,6 @@ textarea:-moz-ui-invalid {
 }
 
 .price__card:hover {
-    box-shadow: 0px 4px 40px 15px var(--bg-btn);
-    -webkit-box-shadow: 0px 4px 40px 15px var(--bg-btn);
-    -moz-box-shadow: 0px 4px 40px 15px var(--bg-btn);
     transition: all ease 0.2s;
     border: 2px solid var(--bg-btn);
 }
@@ -270,6 +273,8 @@ header {
 }
 
 .header__logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -418,12 +423,15 @@ header {
 /* Services */
 
 .service__container {
-    text-align: center;
-    padding-top: 50px;
     padding-bottom: 80px;
 }
 
-.service__container h2 {
+.service__title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.service__title h2 {
     font-weight: 500;
     font-size: 36px;
     line-height: 75px;
@@ -434,7 +442,7 @@ header {
     margin-bottom: 4px;
 }
 
-.service__container p {
+.service__title p {
     font-size: 18px;
     line-height: 26px;
     /* or 144% */
@@ -601,6 +609,13 @@ div#project_slider .owl-stage-outer .owl-stage {
     padding: 40px 40px 25px 40px;
 }
 
+.price__card-highlite {
+    border-color: #fff;
+    box-shadow: 0px 4px 40px 15px var(--bg-btn);
+    -webkit-box-shadow: 0px 4px 40px 15px var(--bg-btn);
+    -moz-box-shadow: 0px 4px 40px 15px var(--bg-btn);
+}
+
 .price__card .title {
     width: 100%;
     font-weight: 500;
@@ -610,6 +625,11 @@ div#project_slider .owl-stage-outer .owl-stage {
     text-align: center;
     letter-spacing: 0.08em;
     color: var(--bg-btn)
+}
+
+.price__card h3 {
+    font-size: 24px;
+    line-height: 26px;
 }
 
 .price__card .title .think {
@@ -669,6 +689,7 @@ div#project_slider .owl-stage-outer .owl-stage {
 .price__card .cta {
     height: 96px;
     margin-top: 25px;
+    width: 100%;
 }
 
 .price__card .btn-blue {
@@ -703,7 +724,7 @@ button.btn-transparent {
 
 .price__after h3 {
     color: #fff;
-    margin-top: 40px;
+    margin: 40px 0;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -791,6 +812,10 @@ button.btn-transparent {
     letter-spacing: 0.04em;
     color: var(--dark-gray);
     margin-bottom: 25px;
+}
+
+.partner__profit-img {
+    padding-left: 30px !important;
 }
 
 .partner__profit-item .profit__icon {

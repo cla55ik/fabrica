@@ -1,1 +1,272 @@
-@media screen and (min-widtn:577px) and (max-width:1199px) {}
+@media screen and (min-width:576px) and (max-width:1199px) {
+    input {
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        letter-spacing: 0.08em;
+    }
+    .container {
+        max-width: 576px;
+    }
+    /* main */
+    .section__cta {
+        padding-bottom: 25px;
+    }
+    .cta__content {
+        padding: 50px 25px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    .header__contacts-tablet {
+        padding-top: 9px;
+        padding-bottom: 20px;
+        background: rgba(63, 57, 57, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .header__contacts-tablet div {
+        margin-top: 6px;
+    }
+    .header__contacts-tablet a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .header__menu {
+        background: none;
+        display: block;
+    }
+    .header__menu-container {
+        padding-top: 40px;
+        padding-bottom: 75px;
+    }
+    .header__menu-container div {
+        margin-bottom: 10px;
+    }
+    .header__menu-container a {
+        width: 100%;
+        color: var(--dark-gray);
+        font-size: 18px;
+        line-height: 35px;
+        /* identical to box height, or 194% */
+        letter-spacing: 0.08em;
+    }
+    /* Services */
+    .service__container {
+        padding-bottom: 0;
+        padding-top: 35px;
+    }
+    .service__title {
+        background: rgba(101, 137, 241, 0.5);
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .service__title h2 {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+    .service__title p {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--dark-gray);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .service__btn {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    /* projects */
+    .project__container h2 {
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.04em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .container-fluid {
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .container-sm {
+        max-width: 100%;
+    }
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: 295px;
+    }
+    /* CTA */
+    .signup__tablet-title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        /* or 146% */
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--bg-btn);
+    }
+    .signup__section-wrapper {
+        padding-top: 0;
+    }
+    .signup__section-wrapper h2 {
+        font-size: 24px;
+        line-height: 35px;
+        /* or 146% */
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+    .signup__section-wrapper p {
+        font-size: 18px;
+        line-height: 29px;
+        /* or 222% */
+        text-align: center;
+        letter-spacing: 0.04em;
+        padding: 20px 0;
+    }
+    .signup__section-wrapper form {
+        margin-top: 25px;
+    }
+    form#signup input {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    form#signup button.btn-blue.btn-arrow {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    /* price */
+    .price {
+        padding-top: 85px;
+        padding-bottom: 45px;
+    }
+    .price__container h2 {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .price__card {
+        width: 47%;
+        margin-bottom: 6%;
+        padding: 40px 35px 25px 35px;
+    }
+    .price__card-highlite {
+        border-color: var(--light-gray);
+    }
+    .price__card .cta {
+        width: 100%;
+        height: 96px;
+        margin-top: 25px;
+    }
+    .price__description p {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-align: left;
+    }
+    .price__after {
+        padding-top: 85px;
+        padding-bottom: 20px;
+    }
+    .price__after h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #626262;
+    }
+    .price__after-profit .profit-item {
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+        color: #626262;
+        margin: 25px 0;
+    }
+    .profit-item img {
+        width: 21px;
+    }
+    /* advertising  */
+    .advertising {
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.08em;
+        padding: 75px 0;
+    }
+    /* partner */
+    .partner {
+        background: none;
+    }
+    .partner .title__mob {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--bg-btn);
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .partner__container {
+        border: none;
+    }
+    .partner__container h2 {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+    .partner__container .description {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin: 30px 0;
+    }
+    .partner__profit-item {
+        margin: 0px 30px 25px 30px;
+    }
+    .partner__profit-item .profit__icon {
+        width: 13%;
+    }
+    .partner__profit-item .profit__text {
+        width: 87%;
+    }
+    .parthner-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+    .partner__profit-img {
+        padding-left: 0;
+    }
+    .profit-btn {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
