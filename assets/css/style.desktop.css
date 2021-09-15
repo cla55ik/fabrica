@@ -1146,6 +1146,13 @@ form#form_modal_callback .subscribe {
     -webkit-box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.75);
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
 }
 
 .modal__confirm-header {
@@ -1268,15 +1275,19 @@ input#subscribe {
     display: none;
 }
 
-
-/* MOBILE */
-
 .form__msg {
     padding: 30px;
     font-weight: 500;
 }
 
 .modal__msg {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
     padding: 30px;
     position: fixed;
     bottom: 0;
@@ -1291,4 +1302,16 @@ input#subscribe {
 
 .modal__msg-text {
     justify-content: center;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }

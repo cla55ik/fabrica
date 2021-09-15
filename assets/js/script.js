@@ -193,6 +193,7 @@ function submitFormSignUp(form_id, type) {
             if (data == 'ok') {
                 $(".modal").modal("hide");
                 formSuccess('modal_confirm');
+                $('#' + form_id)[0].reset();
             } else {
                 $('#modal_msg_text').html(data);
                 $('#modal_msg').removeClass('hidden');
@@ -220,6 +221,7 @@ function submitForm(form_id, type) {
                 $(".modal").modal("hide");
                 $('#modal_msg_text').html(data);
                 $('#modal_msg').removeClass('hidden');
+                $('#' + form_id)[0].reset();
             } else {
                 $('#modal_msg_text').html(data);
                 $('#modal_msg').removeClass('hidden');

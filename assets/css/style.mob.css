@@ -277,6 +277,9 @@ html {
         text-align: center;
         letter-spacing: 0.08em;
     }
+    .price__card .last-price {
+        margin-bottom: 9px;
+    }
     .price__card .cta {
         width: 100%;
         height: 96px;
