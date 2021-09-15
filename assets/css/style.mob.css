@@ -367,6 +367,12 @@ html {
         padding-left: 35px;
         padding-right: 35px;
     }
+    .partner__profit-item .profit__text {
+        width: 100%;
+    }
+    span.profit__text.profit-btn {
+        text-align: center;
+    }
     .partner__container .description {
         font-size: 14px;
         line-height: 28px;
@@ -404,7 +410,7 @@ html {
         color: #000000;
     }
     .profit__text button {
-        width: 90%;
+        width: 80%;
     }
     /* feedback */
     .feedback {
