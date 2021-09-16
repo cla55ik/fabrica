@@ -24,6 +24,10 @@ html {
 }
 
 @media screen and (max-width:576px) {
+    input {
+        font-size: 14px;
+        line-height: 17px;
+    }
     .btn-blue,
     .btn-arrow,
     .btn-transparent {

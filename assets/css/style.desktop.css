@@ -126,8 +126,8 @@ input {
     box-sizing: border-box;
     border-radius: 0;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 0.08em;
     color: var(--gray-btn);
     padding: 18px 25px;
@@ -743,6 +743,9 @@ button.btn-transparent {
 }
 
 .profit-item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
     margin-right: 40px;
 }
 
